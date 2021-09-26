@@ -1,0 +1,19 @@
+.mainLayout {
+    display: grid;
+    min-height: 100vh;
+    // grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        'header'
+        'navigation'
+        '.'
+        'pagination'
+        'footer';
+    row-gap: 35px;
+}
+
+.productLayout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, auto));
+    justify-content: space-between;
+    gap: 30px;
+}

@@ -1,0 +1,38 @@
+.footer {
+    grid-area: footer;
+
+    background-color: #000;
+    height: 65px;
+
+    display: grid;
+    grid-template-areas: 'email icons';
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email {
+    grid-area: email;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+        text-decoration: initial;
+        text-decoration-color: #fff;
+    }
+}
+
+.socialIcons {
+    grid-area: icons;
+}
+
+.socialIcon {
+    width: 26px;
+    height: 26px;
+    margin: 0 9px;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

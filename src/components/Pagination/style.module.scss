@@ -1,0 +1,14 @@
+.pagination {
+    grid-area: pagination;
+}
+
+.pageList {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    list-style: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
