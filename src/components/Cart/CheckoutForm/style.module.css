@@ -1,0 +1,43 @@
+.formSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--cart-gap);
+  margin-bottom: calc(var(--cart-gap) * 2);
+}
+
+.formSectionTitle {
+  font-weight: var(--fontWeightBold);
+  font-size: var(--fontSizeMd);
+}
+
+.formField {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 5px;
+  font-weight: var(--fontWeightSemiBold);
+  font-size: var(--fontSizeSm);
+}
+
+.input {
+  margin: 0;
+  font-size: 100%;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.33;
+  width: 100%;
+  border: 0 none;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 0;
+
+  color: #1d1d1d;
+  border: 1px solid #1d1d1d;
+  height: 56px;
+}
+
+.formArddressRow {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 15px;
+}

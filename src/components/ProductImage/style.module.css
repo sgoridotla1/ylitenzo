@@ -1,0 +1,50 @@
+.wrapper {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgca(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow.arrowPrev {
+  left: 0;
+}
+
+.arrow.arrowNext {
+  right: 0;
+}
+
+:global .carousel-status {
+  display: none;
+}
+
+:global .carousel .control-dots .dot {
+  display: none;
+  background-color: var(--color-main);
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+:global .carousel .thumbs-wrapper {
+  margin: 20px 0;
+  overflow-x: scroll;
+}
+:global .carousel .thumbs-wrapper .thumbs {
+  padding: 0;
+}
+:global .carousel .thumbs-wrapper .thumbs .thumb:last-child {
+  margin-right: 0;
+}
+
+:global .carousel .thumbs-wrapper .control-arrow {
+  display: none;
+}

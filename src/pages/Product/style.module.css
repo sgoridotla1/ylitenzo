@@ -1,0 +1,31 @@
+.productWrapper {
+  --gap: 20px;
+}
+
+.name {
+  font-size: var(--fontSizeLg);
+  margin-bottom: var(--gap);
+}
+
+.price {
+  font-weight: var(--fontWeightBold);
+  margin-bottom: var(--gap);
+}
+
+.stick {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: grid;
+  row-gap: 10px;
+  font-weight: var(--fontWeightNormal);
+  margin-bottom: 20px;
+}
+
+.info ul {
+  list-style: none;
+}

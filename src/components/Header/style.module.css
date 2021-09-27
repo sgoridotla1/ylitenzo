@@ -1,0 +1,72 @@
+.header {
+  grid-area: header;
+
+  display: grid;
+  align-items: center;
+  height: 80px;
+  grid-template-rows: auto;
+  grid-template-columns: 35px 180px 35px;
+  grid-template-areas: 'navButton logo cart';
+  justify-content: space-between;
+
+  background-color: var(--color-main);
+}
+
+.logo {
+  grid-area: logo;
+  text-align: center;
+
+  text-decoration: none;
+  color: var(--color-main-opp);
+  font-weight: var(--fontWeightSemiBold);
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.search {
+  display: none;
+  grid-area: search;
+  color: var(--color-main-opp);
+}
+
+.cart {
+  grid-area: cart;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 35px;
+  color: var(--color-main-opp);
+  fill: var(--color-main-opp);
+  position: relative;
+}
+
+.cart .quantity {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  background-color: red;
+  width: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 50%;
+
+  font-weight: var(--fontWeightSemiBold);
+}
+
+.navButton {
+  grid-area: navButton;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+
+  color: var(--color-main-opp);
+}

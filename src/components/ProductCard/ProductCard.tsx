@@ -1,20 +1,24 @@
+import { Link } from 'react-router-dom'
 import React from 'react'
 import productImage from './product.png'
-import style from './style.module.scss'
+import style from './style.module.css'
+import { useCart } from '../../hooks/useCart'
 
 const ProductCard = () => {
-    return (
-        <div className={style.productCard}>
-            <div className={style.image}>
-                <img src={productImage} alt="" />
-            </div>
+  const [{ currency }] = useCart()
 
-            <div className={style.name}>WORLD ON FIRE Sweatshirt</div>
-            <div className={style.price}>
-                {(Math.random() * 100).toFixed(2)}$
-            </div>
-        </div>
-    )
+  return (
+    <Link to="/product/WORLD ON FIRE Sweatshirt" className={style.productCard}>
+      <div className={style.image}>
+        <img src={productImage} alt="" />
+      </div>
+
+      <div className={style.name}>WORLD ON FIRE Sweatshirt</div>
+      <div className={style.price}>
+        {(Math.random() * 100).toFixed(0)} {currency}
+      </div>
+    </Link>
+  )
 }
 
 export default ProductCard
