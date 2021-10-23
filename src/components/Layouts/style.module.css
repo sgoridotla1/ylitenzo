@@ -3,11 +3,12 @@
   min-height: 100vh;
   grid-template-columns: 1fr;
   grid-template-areas:
-    'header'
     'navigation'
     '.'
     'footer';
   row-gap: 35px;
+
+  padding-top: calc(var(--header-height) + 40px);
 }
 
 .productLayout {

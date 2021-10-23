@@ -24,6 +24,9 @@ html {
   --cart-gap: 20px;
   --sbm-button-color: var(--color-main-opp);
   --sbm-button-bg: var(--color-main);
+
+  /* Header */
+  --header-height: 80px;
 }
 
 body {

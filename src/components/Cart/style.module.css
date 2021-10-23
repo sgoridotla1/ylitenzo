@@ -10,6 +10,7 @@
   display: grid;
   grid-template-rows: 60px 1fr;
   overflow-y: scroll;
+  gap: 20px;
 
   background-color: #fff;
   transition: transform 0.15s ease-in;
@@ -28,6 +29,7 @@
   align-items: center;
   padding: 0 var(--cart-gap);
   background: var(--color-main);
+  height: var(--header-height);
 }
 
 .cartCloseIcon {
