@@ -26,14 +26,13 @@
   font-size: 16px;
   line-height: 1.33;
   width: 100%;
-  border: 0 none;
   box-sizing: border-box;
   outline: none;
   border-radius: 0;
 
-  color: #1d1d1d;
-  border: 1px solid #1d1d1d;
-  height: 56px;
+  color: var(--input-color);
+  border: var(--input-border);
+  height: var(--input-height);
 }
 
 .formArddressRow {

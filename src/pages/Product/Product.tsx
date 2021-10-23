@@ -10,10 +10,12 @@ import { useCart } from '../../hooks/useCart'
 import { useParams } from 'react-router-dom'
 
 export default function Product() {
-  const [, { add: addToCart }] = useCart()
+  const [{ currency }, { add: addToCart }] = useCart()
   const params = useParams()
+
   const [price] = useState(200)
-  const [currency] = useState('usd')
+  const [size, setSize] = useState('')
+  const [color, setColor] = useState('')
 
   return (
     <div className={cn(style.productWrapper, 'container')}>
@@ -27,7 +29,7 @@ export default function Product() {
         <span>
           <Select
             label="Size"
-            onSelect={() => {}}
+            onSelect={setSize}
             defaultValue="m"
             items={[
               {
@@ -49,6 +51,24 @@ export default function Product() {
               {
                 value: 'xl',
                 name: 'xLarge',
+              },
+            ]}
+          />
+        </span>
+
+        <span>
+          <Select
+            label="Color"
+            onSelect={setColor}
+            defaultValue="black"
+            items={[
+              {
+                value: 'black',
+                name: 'Black',
+              },
+              {
+                value: 'white',
+                name: 'White',
               },
             ]}
           />

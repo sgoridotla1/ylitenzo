@@ -5,9 +5,11 @@
 .name {
   font-size: var(--fontSizeLg);
   margin-bottom: var(--gap);
+  font-weight: var(--fontWeightSemiBold);
 }
 
 .price {
+  font-size: var(--fontSizeMd);
   font-weight: var(--fontWeightBold);
   margin-bottom: var(--gap);
 }
@@ -19,16 +21,20 @@
 }
 
 .stick img {
-  width: 33%;
+  width: 20%;
 }
 
 .info {
   display: grid;
-  row-gap: 10px;
+  row-gap: 20px;
   font-weight: var(--fontWeightNormal);
   margin-bottom: 20px;
 }
 
 .info ul {
   list-style: none;
+}
+
+.info ul li {
+  margin-bottom: 8px;
 }
