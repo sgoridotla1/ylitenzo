@@ -1,0 +1,59 @@
+.selectWrapper {
+  position: relative;
+}
+
+.label {
+  font-weight: var(--fontWeightSemiBold);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.input {
+  border: var(--input-border);
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+
+.button [data-reach-listbox-arrow] {
+  position: relative;
+  top: 2px;
+}
+
+.popover {
+  position: absolute;
+  width: 100%;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: auto !important;
+}
+
+.list {
+  width: 100%;
+  list-style: none;
+  padding: 15px 0;
+
+  background-color: var(--color-main-opp);
+  box-shadow: var(--main-shadow);
+}
+
+.option {
+  cursor: pointer;
+  padding: 8px 25px;
+}
+
+.option:hover,
+.option[data-current-nav] {
+  background-color: var(--color-border);
+}
+
+.option[data-current-selected] {
+  background-color: var(--color-main);
+  color: var(--color-main-opp);
+}

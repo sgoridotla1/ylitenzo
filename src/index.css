@@ -20,6 +20,12 @@ html {
   --color-main-opp: #fff;
   --color-border: rgba(0, 0, 0, 0.2);
 
+  /* Shadow */
+  --main-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+  /* Border */
+  --input-border: 1px solid var(--color-main);
+
   /* Cart */
   --cart-gap: 20px;
   --sbm-button-color: var(--color-main-opp);
